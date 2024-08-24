@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
+import ssl
+import certifi
+ssl_context = ssl.create_default_context(cafile=certifi.where())
 from pathlib import Path
 import os
 
@@ -139,6 +141,7 @@ LOGIN_URL = 'login'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_USE_TILS = True
-EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER ='parth.sharma.0498@gmail.com' #os.environ.get('EMAIL_USER')
+EMAIL_HOST_PASSWORD = 'sjlx ousx hfmo ywfs'#os.environ.get('EMAIL_PASS')
+EMAIL_SSL_CERTFILE = certifi.where()
