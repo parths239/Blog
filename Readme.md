@@ -11,9 +11,6 @@ Laguna is a blog application built with Django, inspired by Corey Schafer's Djan
 - **Responsive Design**: Built with Bootstrap 5 for a mobile-friendly experience.
 - **Future Enhancements**: Plan to add features like adding friends and making connections.
 
-## Installation
-
-To run the Laguna app on your local machine, follow these steps:
 
 ### Prerequisites
 
@@ -21,5 +18,4 @@ To run the Laguna app on your local machine, follow these steps:
 - Django (3.x or newer recommended)
 - Virtualenv (optional but recommended for a clean environment)
 
-### Steps to Install to be added soon...
 
